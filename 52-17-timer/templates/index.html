@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>52/17 Focus Timer</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⏳ Deep Focus Mode</h1>
+    
+    <div id="timer">52:00</div>
+
+    <div class="controls">
+      <button onclick="startTimer()">▶️ Start</button>
+      <button onclick="resetTimer()">⏹️ Reset</button>
+      <button onclick="toggleDarkMode()">🌗 Toggle Dark Mode</button>
+    </div>
+
+    <p id="session-count">Sessions Today: 0</p>
+
+    <!-- Sound alert -->
+    <audio id="alarm-sound" src="static/alarm.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
