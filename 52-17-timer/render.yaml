@@ -1,9 +1,1 @@
-services:
-  - type: web
-    name: deep-focus-timer
-    env: python
-    buildCommand: "poetry install"
-    startCommand: "python app.py"  # Change this to your actual entry point
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.11
+web: gunicorn app:app
